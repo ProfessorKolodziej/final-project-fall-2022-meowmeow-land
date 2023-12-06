@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+	<title>gamelistpage</title>
+	<link rel="stylesheet" type="text/css" href="css/gamelist.css">
+	<link rel="stylesheet" href="css/stylesheet.css" type="text/css" />
+	<link rel="stylesheet" href="css/stylesheet2.css" type="text/css" />
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.2/dragula.min.css" />
+</head>
+
+<body>
+
+	<main class="content-container-gamelist">
+
+		<div class="gamelistbackground">
+			<img src="images/BEACHBG.png" alt="background">
+		</div>
+
+		<div class="starleft">
+			<img src="images/starleft.png" alt="starl">
+		</div>
+
+		<div class="starright">
+			<img src="images/starright.png" alt="starr">
+		</div>
+
+
+		<div id="game-machine">
+			<div class="arcade">
+				<img src="images/arcade.png" alt="Game Machine">
+			</div>
+
+			<div class="slot">
+				<div id="coin-slot" class="dropzone"></div>
+			</div>
+		</div>
+
+		<div id="coins">
+			<img src="images/coin.png" alt="Coin">
+		</div>
+
+		<div id="fish">
+			<img src="images/fish.png" alt="fish">
+		</div>
+
+		<div id="berry">
+			<img src="images/berry.png" alt="berry">
+		</div>
+		<div id="candy">
+			<img src="images/candy.png" alt="candy">
+		</div>
+		<div id="paww">
+			<img src="images/paww.png" alt="paww">
+		</div>
+		<div id="pawo">
+			<img src="images/pawo.png" alt="pawo">
+		</div>
+		<div id="pawp">
+			<img src="images/pawp.png" alt="pawp">
+		</div>
+		<div id="heart-s">
+			<img src="images/heart-s.png" alt="heart-s">
+		</div>
+		<div id="pawb">
+			<img src="images/pawb.png" alt="pawb">
+		</div>
+		<div id="star-s">
+			<img src="images/star-s.png" alt="star-s">
+		</div>
+
+		<div class="backsquarebutton">
+			<a href="menupage.html">
+				<img src="images/backsquare.png" class="sound-button" data-target="menupage.html" alt="gamebutton">
+			</a>
+		</div>
+
+		<div class="music-button">
+			<img id="music-toggle" src="images/play_button.png" style="width:80px; height:80px; cursor:pointer;" />
+		</div>
+
+
+
+	</main>
+
+	<audio id="buttonSound" src="sounds/meow.m4a"></audio>
+
+	<audio id="menubgSound" loop>
+		<source src="sounds/beach.mp3" type="audio/mpeg">
+	</audio>
+
+	<audio id="coinSound" src="sounds/coin1.wav"></audio>
+
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.2/dragula.min.js"></script>
+	<script>
+		// 你的 JavaScript 代码
+		dragula([document.getElementById('coins')]);
+		dragula([document.getElementById('fish')]);
+		dragula([document.getElementById('berry')]);
+		dragula([document.getElementById('candy')]);
+		dragula([document.getElementById('heart-s')]);
+		dragula([document.getElementById('star-s')]);
+		dragula([document.getElementById('paww')]);
+		dragula([document.getElementById('pawb')]);
+		dragula([document.getElementById('pawp')]);
+		dragula([document.getElementById('pawo')]);
+	</script>
+
+	<script>
+		// 初始化 dragula
+		var drake = dragula([document.getElementById('coins'), document.getElementById('coin-slot')]);
+
+		// 获取音效元素
+		var coinSound = document.getElementById('coinSound');
+		coinSound.volume = 0.6;
+
+		// 监听 drop 事件
+		drake.on('drop', function (el, target, source, sibling) {
+			// 检查是否是 coin 元素被放入了 coin-slot 中
+			if (target.id === 'coin-slot' && el.tagName === 'IMG' && el.src.includes('coin.png')) {
+				// 播放音效
+				coinSound.play();
+
+				// 监听音效播放完毕事件
+				coinSound.onended = function () {
+					// 音效播放完毕后跳转到 gamepage.html
+					window.location.href = 'gamepage.html';
+				};
+			}
+		});
+	</script>
+
+	<script>
+		document.querySelectorAll('.sound-button').forEach(function (button) {
+			button.addEventListener('click', function (event) {
+				event.preventDefault();
+				var sound = document.getElementById('buttonSound');
+				sound.play();
+				sound.onended = function () {
+					var target = button.getAttribute('data-target');
+					window.location.href = target;
+				};
+			});
+		});
+
+		document.addEventListener('DOMContentLoaded', function () {
+			var music = document.getElementById('menubgSound');
+			var toggleButton = document.getElementById('music-toggle');
+
+			menubgSound.volume = 0.3;
+
+			toggleButton.addEventListener('click', function () {
+				if (music.paused) {
+					music.play();
+					toggleButton.src = 'images/pause_button.png'; // 暂停音乐时的图片
+				} else {
+					music.pause();
+					toggleButton.src = 'images/play_button.png'; // 播放音乐时的图片
+				}
+			});
+		});
+	</script>
+
+
+</body>
+
+
+
+</html>
