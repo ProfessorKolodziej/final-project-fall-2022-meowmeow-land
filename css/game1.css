@@ -1,0 +1,467 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.content-container-game1 {
+	position: relative;
+
+}
+
+.gamebackground-one {
+	padding: 0;
+	margin: 0;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.gamebackground-one img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+
+}
+
+.backsquarebutton img {
+	width: 150px;
+}
+
+.backsquarebutton {
+	position: absolute;
+	top: 5%;
+	left: 5%;
+}
+
+
+.backsquarebutton:hover {
+	transform: scale(1.1);
+	transition: transform 0.3s ease;
+}
+
+
+.cat-c img {
+	width: 300px;
+}
+
+.cat-c {
+	position: absolute;
+	top: 45%;
+	left: 25%;
+}
+
+.user-c img {
+	width: 300px;
+}
+
+.user-c {
+	position: absolute;
+	top: 45%;
+	left: 55%;
+}
+
+
+.result-img img {
+	width: 850px;
+}
+
+.result-img {
+	position: absolute;
+	top: 30%;
+	left: 25%;
+}
+
+.cat img {
+	width: 300px;
+}
+
+.cat {
+	position: absolute;
+	top: 57%;
+	left: 5%;
+}
+
+.user img {
+	width: 300px;
+}
+
+.user {
+	position: absolute;
+	top: 52%;
+	left: 75%;
+
+}
+
+.vs {
+	position: absolute;
+	top: 80%;
+	left: 45%;
+}
+
+.buttons {
+	position: absolute;
+	top: 5%;
+	left: 31%;
+}
+
+button {
+	border: none;
+	outline: none;
+	background: none;
+	padding: 0;
+	cursor: pointer;
+	margin: 0 20px;
+}
+
+button img {
+	display: block;
+	width: 150px;
+	height: auto;
+}
+
+button:hover {
+	transform: scale(1.1);
+	transition: transform 0.3s ease;
+}
+
+.music-button {
+	position: absolute;
+	top: 4%;
+	left: 85%;
+}
+
+.music-button:hover {
+	transform: scale(1.1);
+	transition: transform 0.3s ease;
+}
+
+.user-health-container img {
+	width: 300px;
+}
+
+.user-health-container {
+	position: absolute;
+	top: 87%;
+	left: 75%;
+}
+
+.computer-health-container img {
+	width: 300px;
+}
+
+.computer-health-container {
+	position: absolute;
+	top: 87%;
+	left: 3%
+}
+
+@keyframes pop {
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.2);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+#computer-choice,
+#user-choice,
+#user-health-img,
+#computer-health-img,
+#result {
+	animation: pop 0.5s ease;
+}
+
+.game-over-screen {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	z-index: 1000;
+	text-align: center;
+}
+
+.game-over-screen img {
+	margin: 10px;
+	max-width: 90%;
+	height: auto;
+}
+
+.restart-button,
+.finish-button {
+	cursor: pointer;
+	margin-top: 20px;
+	transition: transform 0.2s;
+}
+
+.restart-button:hover,
+.finish-button:hover {
+	transform: scale(1.1);
+
+}
+
+
+.victory-img {
+	position: absolute;
+	top: 13%;
+}
+
+.game-over-img {
+	position: absolute;
+	top: 13%;
+}
+
+.user-happy img {
+	width: 200px;
+}
+
+.user-happy {
+	position: absolute;
+	top: 50%;
+	left: 60%;
+}
+
+.cat-sad img {
+	width: 200px;
+}
+
+.cat-sad {
+	position: absolute;
+	top: 50%;
+	left: 23%;
+}
+
+.user-sad img {
+	width: 200px;
+}
+
+.user-sad {
+	position: absolute;
+	top: 50%;
+	left: 60%;
+}
+
+.cat-happy img {
+	width: 200px;
+}
+
+.cat-happy {
+	position: absolute;
+	top: 50%;
+	left: 23%;
+}
+
+
+.startBtn img {
+	width: 250px;
+}
+
+.startBtn {
+	position: absolute;
+	top: 62%;
+	left: 40%;
+}
+
+.finishBtn img {
+	width: 250px;
+}
+
+.finishBtn {
+	position: absolute;
+	top: 75%;
+	left: 40%;
+}
+
+@media (width <=768px) {
+	.cat img {
+		width: 200px;
+	}
+
+	.cat {
+		position: absolute;
+		top: 67%;
+		left: 0%;
+	}
+
+	.user img {
+		width: 200px;
+	}
+
+	.user {
+		position: absolute;
+		top: 62%;
+		left: 60%;
+
+	}
+
+	.vs img {
+		width: 100px;
+	}
+
+	.vs {
+		position: absolute;
+		top: 80%;
+		left: 40%;
+	}
+
+	.buttons img {
+		width: 80px;
+	}
+
+	.buttons {
+		position: absolute;
+		top: 30%;
+		left: 10%;
+	}
+
+	.result-img img {
+		width: 400px;
+	}
+
+	.result-img {
+		position: absolute;
+		top: 20%;
+		left: 8%;
+	}
+
+	.cat-c img {
+		width: 100px;
+	}
+
+	.cat-c {
+		position: absolute;
+		top: 45%;
+		left: 25%;
+	}
+
+	.user-c img {
+		width: 100px;
+	}
+
+	.user-c {
+		position: absolute;
+		top: 45%;
+		left: 55%;
+	}
+
+
+	.music-button {
+		position: absolute;
+		top: 0%;
+		left: 48%;
+	}
+
+	.music-button {
+		position: absolute;
+		top: 4%;
+		left: 70%;
+	}
+
+
+	.user-health-container img {
+		width: 150px;
+	}
+
+	.user-health-container {
+		position: absolute;
+		top: 92%;
+		left: 60%;
+	}
+
+	.computer-health-container img {
+		width: 150px;
+	}
+
+	.computer-health-container {
+		position: absolute;
+		top: 92%;
+		left: 3%
+	}
+
+	.restart-button img {
+		width: 300px;
+
+	}
+
+	.finish-button img {
+		withth: 300px;
+	}
+
+
+	.startBtn img {
+		width: 150px;
+	}
+
+	.finishBtn img {
+		width: 150px;
+
+	}
+
+	.startBtn {
+		position: absolute;
+		top: 25%;
+		left: 33%;
+	}
+
+	.finishBtn {
+		position: absolute;
+		top: 35%;
+		left: 33%;
+	}
+
+
+
+
+	.user-happy img {
+		width: 100px;
+	}
+
+	.user-happy {
+		position: absolute;
+		top: 45%;
+		left: 55%;
+	}
+
+
+	.cat-sad img {
+		width: 100px;
+	}
+
+	.cat-sad {
+		position: absolute;
+		top: 45%;
+		left: 21%;
+	}
+
+	.user-sad img {
+		width: 100px;
+	}
+
+	.user-sad {
+		position: absolute;
+		top: 45%;
+		left: 55%;
+	}
+
+	.cat-happy img {
+		width: 100px;
+	}
+
+	.cat-happy {
+		position: absolute;
+		top: 45%;
+		left: 21%;
+	}
+
+}

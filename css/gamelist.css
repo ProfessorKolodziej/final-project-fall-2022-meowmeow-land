@@ -1,0 +1,243 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.content-container-gamelist {
+	position: relative;
+
+}
+
+.gamelistbackground {
+	padding: 0;
+	margin: 0;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.gamelistbackground img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+
+}
+
+.starleft {
+	position: absolute;
+	top: 0%;
+	left: 0%;
+}
+
+.starright {
+	position: absolute;
+	top: 0%;
+	right: 0%;
+}
+
+.arcade img {
+	width: 550px;
+}
+
+.arcade {
+	position: absolute;
+	top: 8%;
+	left: 32%;
+}
+
+.dropzone {
+	position: absolute;
+	top: 62%;
+	left: 45%;
+	width: 130px;
+	height: 180px;
+	background-color: transparent;
+}
+
+#coins {
+	position: absolute;
+	top: 14%;
+	left: 80%;
+
+}
+
+
+#fish {
+	position: absolute;
+	top: 70%;
+	left: 72%;
+
+}
+
+#berry {
+	position: absolute;
+	top: 50%;
+	left: 80%;
+
+}
+
+#candy {
+	position: absolute;
+	top: 30%;
+	left: 70%;
+
+}
+
+#paww {
+	position: absolute;
+	top: 10%;
+	left: 68%;
+
+}
+
+#pawo {
+	position: absolute;
+	top: 10%;
+	right: 68%;
+
+}
+
+#pawp {
+	position: absolute;
+	top: 30%;
+	right: 73%;
+
+}
+
+#heart-s {
+	position: absolute;
+	top: 50%;
+	right: 68%;
+
+}
+
+#pawb {
+	position: absolute;
+	top: 68%;
+	right: 70%;
+
+}
+
+#star-s {
+	position: absolute;
+	top: 14%;
+	right: 80%;
+
+}
+
+.gu-mirror {
+
+	opacity: 1;
+
+}
+
+
+.gu-transit {
+
+	opacity: 0.1;
+
+}
+
+.backsquarebutton img {
+	width: 200px;
+}
+
+.backsquarebutton {
+	position: absolute;
+	top: 87%;
+	left: 6%;
+}
+
+.backsquarebutton img:hover {
+	transform: scale(0.9);
+}
+
+.gallerybutton img:active {
+	filter: brightness(0.8);
+}
+
+
+.music-button {
+	position: absolute;
+	top: 87%;
+	left: 84%;
+}
+
+
+@media (width <=768px) {
+
+	.starleft img {
+		width: 200px;
+
+	}
+
+	.starright img {
+		width: 200px;
+	}
+
+	.arcade img {
+		width: 350px;
+	}
+
+	.arcade {
+		position: absolute;
+		top: 28%;
+		left: 16%;
+	}
+
+	#coins {
+		position: absolute;
+		top: 5%;
+		left: 43%;
+
+	}
+
+	#candy {
+		position: absolute;
+		top: 30%;
+		left: 75%;
+	}
+
+	#heart-s {
+		position: absolute;
+		top: 52%;
+		right: 75%;
+
+	}
+
+	#pawb {
+		position: absolute;
+		top: 68%;
+		right: 78%;
+
+	}
+
+	#fish {
+		position: absolute;
+		top: 80%;
+		left: 62%;
+
+	}
+
+	.music-button {
+		position: absolute;
+		top: 87%;
+		left: 78%;
+	}
+
+	.dropzone {
+		position: absolute;
+		top: 62%;
+		left: 40%;
+		width: 130px;
+		height: 180px;
+		background-color: transparent;
+	}
+
+	#star-s {
+		position: absolute;
+		top: 18%;
+		right: 40%;
+
+	}
+}

@@ -1,0 +1,412 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.content-container-credits {
+	position: relative;
+}
+
+
+.creditsbackground {
+	padding: 0;
+	margin: 0;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.creditsbackground img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+
+}
+
+.creditsbackground::before {
+	content: '';
+	position: absolute;
+	top: 10%;
+	left: 10%;
+	width: 80%;
+	height: 80%;
+	background: rgb(217 217 217 / 0%);
+	border-radius: 125px;
+	border: 5px #F04F78 solid;
+}
+
+
+.jobtitle-art {
+	position: absolute;
+	font-size: 55px;
+	top: -8%;
+	left: 0;
+	width: 100%;
+	text-align: center;
+
+}
+
+.jobtitle-tech {
+	position: absolute;
+	font-size: 55px;
+	top: -8%;
+	left: 0;
+	width: 100%;
+	text-align: center;
+
+}
+
+.jobtitle-cre {
+	position: absolute;
+	font-size: 55px;
+	top: -8%;
+	left: 0;
+	width: 100%;
+	text-align: center;
+
+}
+
+h2 {
+	font-family: 'upheaval_tt_brkregular';
+	color: aliceblue;
+
+}
+
+.bibipic {
+	position: absolute;
+	top: 18%;
+	left: 53%;
+}
+
+.bibicat img {
+	width: 250px;
+}
+
+.bibicat {
+	position: absolute;
+	top: 60%;
+	left: 13%;
+}
+
+.bibibb {
+	position: absolute;
+	top: 52%;
+	left: 32%;
+}
+
+.bibiboard {
+	position: absolute;
+	top: 18%;
+	left: 12%;
+
+}
+
+.qpic {
+	position: absolute;
+	top: 18%;
+	left: 12%;
+}
+
+.qcat {
+	width: 250ox;
+}
+
+.qcat {
+	position: absolute;
+	top: 60%;
+	left: 70%;
+}
+
+.qbb {
+	position: absolute;
+	top: 52%;
+	left: 56%;
+}
+
+.qboard {
+	position: absolute;
+	top: 18%;
+	left: 48%;
+
+}
+
+.nupic {
+	position: absolute;
+	top: 18%;
+	left: 53%;
+}
+
+.nucat img {
+	width: 250px;
+}
+
+.nucat {
+	position: absolute;
+	top: 63%;
+	left: 13%;
+}
+
+.nubb {
+	position: absolute;
+	top: 52%;
+	left: 32%;
+}
+
+.nuboard {
+	position: absolute;
+	top: 18%;
+	left: 12%;
+
+}
+
+
+.gtpic {
+	position: absolute;
+	top: 18%;
+	left: 12%;
+}
+
+.gtcat {
+	width: 250ox;
+}
+
+.gtcat {
+	position: absolute;
+	top: 61%;
+	left: 70%;
+}
+
+.gtbb {
+	position: absolute;
+	top: 52%;
+	left: 56%;
+}
+
+.gtboard {
+	position: absolute;
+	top: 18%;
+	left: 48%;
+
+}
+
+.backsquarebutton img {
+	width: 200px;
+}
+
+.backsquarebutton {
+	position: absolute;
+	top: 75%;
+	left: 43%;
+}
+
+.rightbutton img {
+	width: 100px;
+}
+
+.rightbutton {
+	position: absolute;
+	top: 46%;
+	left: 88%;
+}
+
+.leftbutton img {
+	width: 100px;
+}
+
+.leftbutton {
+	position: absolute;
+	top: 46%;
+	left: 5%;
+}
+
+@media (width <=768px) {
+	.jobtitle-art {
+		font-size: 35px;
+		top: -2%;
+		left: 0;
+		width: 100%;
+		text-align: center;
+	}
+
+	.jobtitle-tech {
+		font-size: 27px;
+		top: 1%;
+		left: 0;
+		width: 100%;
+		text-align: center;
+	}
+
+	.jobtitle-cre {
+		font-size: 28px;
+		top: 1%;
+		left: 0;
+		width: 100%;
+		text-align: center;
+	}
+
+	.bibiboard img {
+		width: 320px;
+	}
+
+	.bibiboard {
+		top: 13%;
+		left: 16%;
+	}
+
+	.bibipic img {
+		width: 320px;
+	}
+
+	.bibipic {
+		top: 37%;
+		left: 16%;
+	}
+
+	.bibicat img {
+		width: 150px;
+	}
+
+	.bibicat {
+		top: 73%;
+		left: 2%;
+	}
+
+	.bibibb img {
+		width: 100px;
+	}
+
+	.bibibb {
+		top: 75%;
+		left: 73%;
+	}
+
+
+
+	.qboard img {
+		width: 320px;
+	}
+
+	.qboard {
+		top: 13%;
+		left: 16%;
+	}
+
+	.qpic img {
+		width: 320px;
+	}
+
+	.qpic {
+		top: 37%;
+		left: 16%;
+	}
+
+	.qcat img {
+		width: 150px;
+	}
+
+	.qcat {
+		top: 73%;
+		left: 72%;
+	}
+
+	.qbb img {
+		width: 100px;
+	}
+
+	.qbb {
+		top: 75%;
+		left: 8%;
+	}
+
+	.nuboard img {
+		width: 320px;
+	}
+
+	.nuboard {
+		top: 13%;
+		left: 16%;
+	}
+
+	.nupic img {
+		width: 320px;
+	}
+
+	.nupic {
+		top: 37%;
+		left: 16%;
+	}
+
+	.nucat img {
+		width: 150px;
+	}
+
+	.nucat {
+		top: 73%;
+		left: 2%;
+	}
+
+	.nubb img {
+		width: 100px;
+	}
+
+	.nubb {
+		top: 75%;
+		left: 73%;
+	}
+
+	.gtboard img {
+		width: 320px;
+	}
+
+	.gtboard {
+		top: 13%;
+		left: 16%;
+	}
+
+	.gtpic img {
+		width: 320px;
+	}
+
+	.gtpic {
+		top: 37%;
+		left: 16%;
+	}
+
+	.gtcat img {
+		width: 150px;
+	}
+
+	.gtcat {
+		top: 73%;
+		left: 72%;
+	}
+
+	.gtbb img {
+		width: 100px;
+	}
+
+	.gtbb {
+		top: 75%;
+		left: 8%;
+	}
+
+	.rightbutton {
+		top: 50%;
+		left: 78%;
+	}
+
+	.leftbutton {
+		top: 50%;
+		left: 0%;
+
+	}
+
+	.backsquarebutton img {
+		width: 170px;
+	}
+
+	.backsquarebutton {
+		top: 86%;
+		left: 33%;
+	}
+}

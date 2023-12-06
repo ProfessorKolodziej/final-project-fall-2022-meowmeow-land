@@ -1,0 +1,250 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.content-container-menu {
+	position: relative;
+}
+
+.menubackground {
+	padding: 0;
+	margin: 0;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.menubackground img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+
+}
+
+.menubackground::before {
+	content: '';
+	position: absolute;
+	top: 10%;
+	left: 10%;
+	width: 80%;
+	height: 80%;
+	background: rgb(217 217 217 / 0%);
+	border-radius: 125px;
+	border: 5px #F04F78 solid;
+}
+
+.starleft {
+	position: absolute;
+	top: 0%;
+	left: 0%;
+}
+
+.starright {
+	position: absolute;
+	top: 0%;
+	right: 0%;
+}
+
+.menu {
+	position: absolute;
+	font-size: 45px;
+	top: -3%;
+	left: 0;
+	width: 100%;
+	text-align: center;
+}
+
+h1 {
+	font-family: '04b30';
+	color: aliceblue;
+	text-shadow:
+		-3px -3px 0 #F04F78,
+		3px -3px 0 #F04F78,
+		-3px 3px 0 #F04F78,
+		8px 8px 0 #F04F78;
+}
+
+.catleft img {
+	width: 200px;
+}
+
+.catleft {
+	position: absolute;
+	top: 45%;
+	left: 8%;
+
+}
+
+.catright img {
+	width: 200px;
+}
+
+.catright {
+	position: absolute;
+	top: 46%;
+	left: 78%;
+
+}
+
+.gamebutton img:hover {
+	transform: scale(0.9);
+}
+
+.gamebutton img:active {
+	filter: brightness(0.8);
+}
+
+.gamebutton img {
+	width: 270px;
+	transition: transform 0.1s ease;
+}
+
+.gamebutton {
+	position: absolute;
+	top: 22%;
+	left: 28%;
+}
+
+.gallerybutton img:hover {
+	transform: scale(0.9);
+}
+
+.gallerybutton img:active {
+	filter: brightness(0.8);
+}
+
+.gallerybutton img {
+	width: 270px;
+	transition: transform 0.1s ease;
+}
+
+.gallerybutton {
+	position: absolute;
+	top: 22%;
+	left: 52%;
+}
+
+.creditsbotton img:hover {
+	transform: scale(0.9);
+}
+
+.creditsbotton img:active {
+	filter: brightness(0.8);
+}
+
+.creditsbotton img {
+	width: 270px;
+	transition: transform 0.1s ease;
+}
+
+.creditsbotton {
+	position: absolute;
+	top: 52%;
+	left: 28%;
+}
+
+
+.backbotton img:hover {
+	transform: scale(0.9);
+}
+
+.backbotton img:active {
+	filter: brightness(0.8);
+}
+
+.backbotton img {
+	width: 270px;
+	transition: transform 0.1s ease;
+}
+
+.backbotton {
+	position: absolute;
+	top: 52%;
+	left: 52%;
+}
+
+.music-button {
+	position: absolute;
+	top: 14%;
+	left: 79%;
+}
+
+@media (width <=768px) {
+	.starleft img {
+		width: 250px;
+
+	}
+
+	.starright img {
+		width: 250px;
+	}
+
+	.menu {
+		font-size: 30px;
+		top: 10%;
+		left: 0;
+		width: 100%;
+		text-align: center;
+	}
+
+	.catleft img {
+		width: 100px;
+	}
+
+	.catleft {
+		top: 67%;
+		left: 9%;
+	}
+
+	.catright img {
+		width: 100px;
+	}
+
+	.catright {
+		top: 67%;
+		left: 70%;
+	}
+
+	.gamebutton {
+		top: 35%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.gamebutton img {
+		width: 150px;
+	}
+
+	.gallerybutton {
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.gallerybutton img {
+		width: 150px;
+	}
+
+	.creditsbotton {
+		top: 65%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.creditsbotton img {
+		width: 150px;
+	}
+
+	.backbotton {
+		top: 80%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.backbotton img {
+		width: 150px;
+	}
+
+
+}

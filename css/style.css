@@ -1,0 +1,193 @@
+/*
+CSS controls the styling of the page.
+You can write a color in directly, or use variables.
+Try changing the color from blue to red in the
+primary color variable below.
+*/
+
+/*
+:root {
+	--color-primary: blue;
+	--color-secondary: #c00;
+}
+*/
+
+/*
+CSS doesn't allow variables to be used in media
+queries just yet, but you can use these values
+to help you out.
+
+	--size-xs: 320px;
+	--size-sm: 480px;
+	--size-md: 768px;
+	--size-lg: 1024px;
+	--size-xl: 1200px;
+*/
+body {
+	margin: 0;
+	padding: 0;
+}
+
+
+.content-container {
+	position: relative;
+
+	/* 为子元素的绝对定位提供参照 */
+}
+
+.mainbackground {
+	padding: 0;
+	margin: 0;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.mainbackground img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+
+.mainbackground::before {
+	content: '';
+	position: absolute;
+	top: 10%;
+	left: 10%;
+	width: 80%;
+	height: 80%;
+	background: rgb(217 217 217 / 0%);
+	border-radius: 125px;
+	border: 5px #F04F78 solid;
+}
+
+.starleft {
+	position: absolute;
+	top: 0%;
+	left: 0%;
+}
+
+.starright {
+	position: absolute;
+	top: 0%;
+	right: 0%;
+}
+
+.header {
+	position: absolute;
+
+
+	top: 10%;
+
+	/* 调整这些值以改变header的位置 */
+	left: 0;
+	width: 100%;
+
+	/* 如果需要，调整宽度 */
+	text-align: center;
+
+	/* 如果需要文字居中 */
+
+	/* 可以添加其他样式，如背景色透明度等 */
+	font-size: 45px;
+}
+
+h1 {
+	font-family: '04b30';
+	color: aliceblue;
+	text-shadow:
+		-3px -3px 0 #F04F78,
+		3px -3px 0 #F04F78,
+		-3px 3px 0 #F04F78,
+		8px 8px 0 #F04F78;
+}
+
+.enterbutton img:hover {
+	transform: scale(0.9);
+}
+
+.enterbutton img:active {
+	filter: brightness(0.8);
+}
+
+.enterbutton img {
+	width: 70%;
+	height: 70%;
+	transition: transform 0.1s ease;
+}
+
+.enterbutton {
+	position: absolute;
+	top: 60%;
+	left: 54%;
+	transform: translate(-50%, -50%);
+
+}
+
+
+.fivecats {
+	position: absolute;
+
+	/* 设置为绝对定位 */
+	top: 82%;
+
+	/* 根据需要调整位置 */
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	/* 居中按钮 */
+}
+
+.tree {
+	position: absolute;
+
+	/* 设置为绝对定位 */
+	top: 40%;
+
+	/* 根据需要调整位置 */
+	left: -5%;
+}
+
+
+@media (width <=768px) {
+	.starleft img {
+		width: 250px;
+
+	}
+
+	.starright img {
+		width: 250px;
+
+	}
+
+	.header {
+		font-size: 25px;
+		top: 17%;
+		left: 0;
+		width: 100%;
+		text-align: center;
+	}
+
+	.enterbutton {
+		width: 100%;
+		top: 55%;
+		left: 66%;
+		transform: translate(-50%, -50%);
+	}
+
+	.tree img {
+		width: 400px;
+
+	}
+
+	.tree {
+		top: 37%;
+		left: 9%;
+	}
+
+	.fivecats img {
+		width: 500px;
+
+	}
+}
