@@ -41,7 +41,7 @@ body {
 
 .arcade {
 	position: absolute;
-	top: 8%;
+	top: 4%;
 	left: 32%;
 }
 
@@ -51,7 +51,7 @@ body {
 	left: 45%;
 	width: 130px;
 	height: 180px;
-	background-color: transparent;
+	background-color: white;
 }
 
 #coins {
